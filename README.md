@@ -4,12 +4,12 @@ DOMContentLoaded
 fixing the (in)famous event that does not trigger once "loaded"
 
 ### How To
-Simply include the inline version of the script on top of any of your HTML pages (few extra bytes, really nothing to worry about) and stop worrying about not being initialized once the **DOM Content** ... has been **Loaded** !!!
+Simply include [the inline version of the script](./dcl.js) on top of any of your HTML pages (few extra bytes, really nothing to worry about) and stop worrying about not being initialized once the **DOM Content** ... has been **Loaded** !!!
 
 Can you believe it ?
 
 ### Content Security Policy
-If you are under this restriction, here the deprecated `sha1` version of the script: `sha1-QPlJBq+FMrZhoPFalxVTE7nbvdU=`
+If you are under this restriction, here the deprecated `sha1` version of [the script](./dcl.js): `sha1-QPlJBq+FMrZhoPFalxVTE7nbvdU=`
 
 While if you are targeting modern browsers, here the `sha256` version: `sha256-zRGYL475jncY0ZUhCwX51PTTvIGNyDS7CVPRS4iotYg=`
 
