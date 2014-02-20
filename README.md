@@ -17,11 +17,11 @@ These digests have been tested without problems via server side headers, as well
 ```html
 <meta
   http-equiv="Content-Security-Policy"
-  content="script-src 'self' 'sha1-QPlJBq+FMrZhoPFalxVTE7nbvdU=' 'sha256-zRGYL475jncY0ZUhCwX51PTTvIGNyDS7CVPRS4iotYg='"
+  content="script-src 'unsafe-inline' 'self' 'sha1-QPlJBq+FMrZhoPFalxVTE7nbvdU=' 'sha256-zRGYL475jncY0ZUhCwX51PTTvIGNyDS7CVPRS4iotYg='"
 >
 ```
 
-Bear in mind you might need to specify `'unsafe-inline'` before `'self'` for backward compatibility.
+Bear in mind you must specify `'unsafe-inline'` in addition to `'self'` for backward compatibility.
 
 
 ### Example
