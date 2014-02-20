@@ -1,7 +1,9 @@
 DOMContentLoaded
 ================
 
-fixing the (in)famous event that does not trigger once "loaded"
+fixing the (in)famous event that does not trigger once "loaded".
+
+Please [read the post](http://webreflection.blogspot.com/2014/02/the-underestimated-problem-about-script.html) to know more about issues you might have relying this event.
 
 ### How To
 Simply include [the inline version of the script](./dcl.js) on top of any of your HTML pages (few extra bytes, really nothing to worry about) and stop worrying about not being initialized once the **DOM Content** ... has been **Loaded** !!!
