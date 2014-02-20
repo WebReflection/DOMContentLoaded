@@ -21,7 +21,7 @@ These digests have been tested without problems via server side headers, as well
 >
 ```
 
-Bear in mind you might need to specify `'unsafe-inline'` before `'self'` for backward compatibility.
+Bear in mind you must specify `'unsafe-inline'` in addition to `'self'` for backward compatibility.
 
 
 ### Example
