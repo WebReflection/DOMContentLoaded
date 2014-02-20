@@ -17,7 +17,7 @@ These digests have been tested without problems via server side headers, as well
 ```html
 <meta
   http-equiv="Content-Security-Policy"
-  content="script-src 'unsafe-inline' 'self' 'sha1-QPlJBq+FMrZhoPFalxVTE7nbvdU=' 'sha256-zRGYL475jncY0ZUhCwX51PTTvIGNyDS7CVPRS4iotYg='"
+  content="script-src 'self' 'sha1-QPlJBq+FMrZhoPFalxVTE7nbvdU=' 'sha256-zRGYL475jncY0ZUhCwX51PTTvIGNyDS7CVPRS4iotYg='"
 >
 ```
 
