@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOMContentLoaded via CSP</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' 'self' 'sha1-F8ev0YcF+TLPZ/rYA4WxeI63FZE=' 'sha256-MhC1XWjT8q/sjgjx3fs59g6+Xyn5ixV2XK04JV4GiJE='">
+    <script>(function(g,a,h,e){function l(m,d){var b=a.createEvent("Event"),c=d||m;b.initEvent(e,!0,!0);b.currentTarget=b.target=a;try{"function"===typeof c?c.call(a,b):c.handleEvent(b)}catch(f){g(n,0,f)}}function n(a,d){throw d||a;}function k(){a.removeEventListener(e,k);a[h]=function d(b,c,f){b===e?g(l,0,c):d.call(a,b,c,!!f)}}a[h].call(a,e,k)})(this.setImmediate||setTimeout,document,"addEventListener","DOMContentLoaded");</script>
+  </head>
+</html>
