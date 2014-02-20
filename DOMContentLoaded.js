@@ -16,14 +16,17 @@
 
   // ued to simulate dispatched event
   function invoke(dler, han) {
-    var e = document.createEvent('Event'),
-        // setImmediate will receive two args
-        // while setTimeout only the first one
-        handler = han || dler;
-    // normally initliazed event
-    e.initEvent(type, true, true);
-    // add some common property
-    e.currentTarget = e.target = document;
+    // no need to go fancy with DOM events
+    // specially because target and currentTarget
+    // might not be addressable without a dispatch
+    var
+      e = {
+        type: type,
+        currentTarget: document,
+        target: document
+      },
+      handler = han || dler
+    ;
     try {
       // if callback invoke with document as context
       if (typeof handler === 'function') {
@@ -92,9 +95,3 @@
   'addEventListener',               // minifier shortcut
   'DOMContentLoaded'                // minifier shortcut
 ));
-
-// Closure Compiler Simple
-// 288 bytes gzipped (415 bytes uncompressed)
-// (function(g,a,h,e){function l(m,d){var b=a.createEvent("Event"),c=d||m;b.initEvent(e,!0,!0);b.currentTarget=b.target=a;try{"function"===typeof c?c.call(a,b):c.handleEvent(b)}catch(f){g(n,0,f)}}function n(a,d){throw d||a;}function k(){a.removeEventListener(e,k);a[h]=function d(b,c,f){b===e?g(l,0,c):d.call(a,b,c,!!f)}}a[h].call(a,e,k)})(this.setImmediate||setTimeout,document,"addEventListener","DOMContentLoaded");
-// Content-Security-Policy
-// script-src 'unsafe-inline' 'self' 'sha1-F8ev0YcF+TLPZ/rYA4WxeI63FZE=' 'sha256-MhC1XWjT8q/sjgjx3fs59g6+Xyn5ixV2XK04JV4GiJE='
