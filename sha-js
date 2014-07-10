@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var crypto = require('crypto');
+var content = require('fs').readFileSync('dcl.js');
+
+console.log('');
+console.log('SHA1');
+console.log(crypto.createHash('sha1').update(content).digest('base64'));
+console.log('');
+console.log('SHA256');
+console.log(crypto.createHash('sha256').update(content).digest('base64'));
+console.log('');

@@ -11,15 +11,15 @@ Simply include [the inline version of the script](./dcl.js) on top of any of you
 Can you believe it ?
 
 ### Content Security Policy
-If you are under this restriction, here the deprecated `sha1` version of [the script](./dcl.js): `sha1-QPlJBq+FMrZhoPFalxVTE7nbvdU=`
+If you are under this restriction, here the deprecated `sha1` version of [the script](./dcl.js): `sha1-//cbZaIlYySeh0GGSwpZKzOAkvg=`
 
-While if you are targeting modern browsers, here the `sha256` version: `sha256-zRGYL475jncY0ZUhCwX51PTTvIGNyDS7CVPRS4iotYg=`
+While if you are targeting modern browsers, here the `sha256` version: `sha256-XpSHSiwcWV9TTNd43i/nMFtZA8u8gQVfVXEy6Wa68a0=`
 
 These digests have been tested without problems via server side headers, as well as meta tag:
 ```html
 <meta
   http-equiv="Content-Security-Policy"
-  content="script-src 'unsafe-inline' 'self' 'sha1-QPlJBq+FMrZhoPFalxVTE7nbvdU=' 'sha256-zRGYL475jncY0ZUhCwX51PTTvIGNyDS7CVPRS4iotYg='"
+  content="script-src 'unsafe-inline' 'self' 'sha1-//cbZaIlYySeh0GGSwpZKzOAkvg=' 'sha256-XpSHSiwcWV9TTNd43i/nMFtZA8u8gQVfVXEy6Wa68a0='"
 >
 ```
 

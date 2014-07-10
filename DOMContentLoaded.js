@@ -12,7 +12,7 @@
 ) {
 
   // the current method
-  var addEventListener = document[add];
+  var originalAddEventListener = document[add];
 
   // ued to simulate dispatched event
   function invoke(dler, han) {
@@ -72,7 +72,7 @@
         // once DOMContentLoaded has been fired
       } else {
         // in every other case just use the normal listener
-        addEventListener.call(
+        originalAddEventListener.call(
           document,
           which,
           handler,
@@ -83,7 +83,7 @@
   }
 
   // add the DOMContentLoaded regularly
-  addEventListener.call(
+  originalAddEventListener.call(
     document,
     type,
     onDOMContentLoaded

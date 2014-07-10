@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo ''
+if [ "$(which openssl)" != "" ]; then
+  echo 'SHA1'
+  cat dcl.js | openssl dgst -binary -sha1 | openssl base64
+  echo ''
+  echo 'SHA256'
+  cat dcl.js | openssl dgst -binary -sha256 | openssl base64
+fi
+echo ''
